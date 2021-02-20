@@ -1,3 +1,3 @@
 # Images In ReadMes
 
-![](home/kenneth/Downloads/Website/quicktech%20logo.png)
+<img src="home/kenneth/Downloads/Website/ABS.gif">
