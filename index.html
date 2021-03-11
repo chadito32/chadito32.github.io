@@ -1,110 +1,167 @@
-<!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="quickTech.css">
+
 <head>
-<body style="background-image: url('Background.jpg');">
-<title> Quicktech Survey </title>
-<img src="QUICKTECH.png" alt="Valencia college" align="center" width="800" height="150">
-<center>
-<h1><b> Survey </b></h1>
-</center>
-<div>
-<form  method="post" >
-	<fieldset name="commentFS" class="commentFS">
-		<label text="Username">
-			 First Name: <input type="text" title="Supply your first name"><br>
-		</label>
-		
-		<label text="Username">
-			 Last Name: <input type="text" title="Supply your last name"><br>
-		</label>
-		
-		<label>
-		Date: <input type="date" id="myDate" value="2021-01-01">
-		</label>
-		
-			<label text="E-mail">
-			 <br>E-mail:   <input type="e-mail" title="Supply a valid e-mail address"><br>
-		</label>
-		
-  <h3 align="left"/>Gender </h3>
-<input type="radio" name="gender" value="male"> Male<br>
-<input type="radio" name="gender" value="female"> Female<br>
-<input type="radio" name="gender" value="other"> Other<br>
-
-
-<h3 align="left"/> </h3>
-<select>	
-  <option value="Choose computer brand">Choose computer brand</option>
-  <option value="Dell">Dell</option>
-  <option value="Asus">Asus</option>
-  <option value="Lenovo">Lenovo</option>
-  <option value="Acer">Acer</option>
-  <option value="Micro-Star International">Micro-Star International</option>
-  <option value="Apple">Apple</option>
-  <option value="Microsoft Corporation">Microsoft Corporation</option>
-  <option value="Razer">Razer</option>
-  <option value="Alienware">Alienware</option>
-  <option value="Samsung Group">Samsung Group</option>
-   <option value="AMD">AMD</option>
-</select><br>
-
-<select>	
-  <option value="Computer part">Computer part</option>
-  <option value="Motherboard">Motherboard</option>
-  <option value="CPU">CPU</option>
-  <option value="Power Supply">Power Supply</option>
-  <option value="RAM">RAM</option>
-  <option value="Hard Disk Drive HDD">HDD</option>
-  <option value="Video Card">Video Card</option>
-  <option value="Solid-state Drive SSD">SSD</option>
-  <option value="Optical Disc Drive">Optical Disc Drive</option>
-  <option value="Card Reader">Card Reader</option>
-  <option value="Monitor">Monitor</option>
-  <option value="Keyboard">Keyboard</option>
-  <option value="Mouse">Mouse</option>
-  <option value="Printer">Printer</option>
-  <option value="Speakers">Speakers</option>
-  <option value="External Hard Drive">External Hard Drive</option>
-  <option value="Desktop Image Scanner">Desktop Image Scanner</option>
-  <option value="Projector">Projector</option>
-  <option value="Joystick">Joystick</option>
-  <option value="HeadPhones">HeadPhones</option>
-  <option value="USB Flash Drive">USB</option>
-  
-</select><br>
-
-<label text="Comment (500 character limit)">
-			<b>Please write a recommendation that you want us to add!:<b> <input type="text" maxlength="500" rows="4" cols="50" id=text><br><br>
-			<b>Add a file picture if necessary:<b>
-			Select a file: <input type="file" name="myFile"><br>
-		</label>
-		
-	
-		
-			<br><select>
-		
-  <option value="Rate us">Rate us</option>
-  <option value="1">1*</option>
-  <option value="2">2*</option>
-  <option value="3">3*</option>
-  <option value="4">4*</option>
-  <option value="5">5*</option>  
- 
-</select><br>
-		
-		<label textarea="Comment (500 character limit)">
-			<input type="textarea" maxlength="500" rows="100" cols="300" id=textarea placeholder="Please write about your shopping experience here!"><br><br>
-		</label>
-		
-		
-		
-		<label>
-						<input type="submit" value="Submit" id=submit>
-		</label>
-	</fieldset>
-</form>
-</body>
-<h1><b>&copy;  Quick-Tech</b></h1>
+	<title>Quick-Tech Part-Shop</title>
+	<link rel="stylesheet" href="quickTech.css">
+	<link rel="java" href="JavaScript">
 </head>
+
+<body bgcolor = "#ffffff">
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search..." class="search">
+  <button type="button" onclick="" class="search"><img src="search.png"></button>
+  <a href="#cart" class="cart">Cart<img src="cart.png"></a>
+</div>
+<div><img src="quicktech logo.png" alt="QuickTech logo" width="800" height="120" class="middle"></div>
+<center>
+<div class="dropdown">
+  <button class="dropbtn">Best Deals</button>
+  <div class="dropdown-content">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">On Sales</button>
+  <div class="dropdown-content">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Premium of the Day</button>
+  <div class="dropdown-content">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">What's New?</button>
+  <div class="dropdown-content">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+</div>
+
+<h3> </h3>
+</center>  
+ 
+<style> 
+.dropbtn {
+  background-color: #005CA4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #0D97FF;}
+</style>
+
+</div>
+
+
+<center>
+	
+<table>
+  <tr>
+    <td>
+      <img src="itemImages/acermon.jpg" class="icon"><p class="itemDscpt">Acer Monitor</p>
+      <p class="itemPrice">$214.99 <button type="button" class="addCart">Add to Cart</button></p><p class="shipPrice">Free Shipping</p>
+    </td>
+    <td>
+      <img src="itemImages/dellmon.jpg" class="icon"><p class="itemDscpt">Dell Monitor</p>
+      <p class="itemPrice">$209.99 <button type="button" class="addCart">Add to Cart</button></p><p class="shipPrice">Free Shipping</p>
+      </td>
+    <td>
+      <img src="itemImages/samsungmon.jpg" class="icon"><p class="itemDscpt">Samsung Monitor</p>
+      <p class="itemPrice">$199.99 <button type="button" class="addCart">Add to Cart</button></p><p class="shipPrice">Free Shipping</p>
+    </td>
+    <td>
+      <img src="itemImages/msimon.jpg" class="icon"><p class="itemDscpt">MSI Monitor</p>
+      <p class="itemPrice">$229.99 <button type="button" class="addCart">Add to Cart</button></p><p class="shipPrice">Free Shipping</p>
+    </td>
+  </tr>
+
+</table>
+
+<div class="row">
+  <div class="column">
+    <img src="brandLogo/Acer.gif" alt="Acer" style="" width="100" height="40" class="middle">
+  </div>
+  <div class="column">
+    <img src="brandLogo/AMD.gif" alt="AMD" style="" width="100" height="40" class="middle">
+  </div>
+  <div class="column">
+    <img src="brandLogo/Asus.gif" alt="Asus" style="" width="100" height="40">
+  </div>
+  <div class="column">
+    <img src="brandLogo/Fenvi.gif" alt="Fenvi" style="">
+  </div>
+  <div class="column">
+    <img src="brandLogo/KUU.gif" alt="KUU" style="">
+  </div>
+  <div class="column">
+    <img src="brandLogo/Lenovo.gif" alt="Lenovo" style="">
+  </div>
+  <div class="column">
+    <img src="brandLogo/MSi.gif" alt="MSi" style="">
+  </div>
+  <div class="column">
+    <img src="brandLogo/Samsung.gif" alt="Samsung" style="">
+  </div>
+  <div class="column">
+    <img src="brandLogo/Seagate.gif" alt="Seagate" style="">
+  </div>
+</div>
+
+<center><h1>  </h1></center>
+
+<center>
+  <img src="App download logo/btn_appStore.png" alt="Apple" id="appdnld">
+  <img src="App download logo/btn_mobileSite.png" alt="Mobile" id="appdnld">
+  <img src="App download logo/btn_playStore.png" alt="Playstore" id="appdnld">
+<h3 style = "color: #005CA4;">&copy;  Quick-Tech</h3>
+</center>
+</footer>
+
 </html>
